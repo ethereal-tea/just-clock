@@ -17,10 +17,10 @@ const getDate = () =>{
 
 const updateClock = () => {
   const {hours, minutes, seconds} = getDate()
-  hourArrow.style.rotate = `${(hours + (hours / 60)) * 30}deg`
+  hourArrow.style.rotate = `${(hours + (minutes / 60)) * 30}deg`
   minuteArrow.style.rotate = `${minutes * 6}deg`
   secondArrow.style.rotate = `${seconds * 6}deg`
-  time.innerHTML = `${hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`
+  time.innerHTML = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`
 }
 
 setInterval(updateClock, 1000)
