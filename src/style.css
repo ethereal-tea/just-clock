@@ -15,6 +15,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  font-family: sans-serif;
 }
 
 .clock {
@@ -25,7 +27,47 @@ body {
   margin: 0 auto;
   padding: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   border-radius: 1rem;
+}
+
+.time {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .clock {
+    margin: 0 1rem;
+  }
+}
+
+.loading {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  font-family: sans-serif;
+  background: #1ac9ec;
+  animation: loader 5s ease-in-out forwards;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
