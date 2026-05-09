@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#minutes, #seconds, #hours {
+  transform-origin: center;
+  transition: transform 1s ease-in;
+}
+
+body {
+  height: 100vh;
+  background: #1ac9ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  flex: 1;
+  background: #ec391a;
+  max-width: 500px;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
