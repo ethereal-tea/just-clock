@@ -14,17 +14,19 @@ body {
   background: #1ac9ec;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
+  gap: 1rem;
   font-family: sans-serif;
 }
 
+
+
 .clock {
-  flex: 1;
+  /* flex: 1; */
   background: #ec391a;
-  max-width: 500px;
+  min-width: 500px;
   height: 80vh;
-  margin: 0 auto;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -69,5 +71,46 @@ body {
   100% {
     opacity: 0;
     display: none;
+  }
+}
+
+.weather {
+  display: flex;
+  background: #ec391a;
+  padding: 2rem;
+  min-width: 500px;
+  border-radius: 1rem;
+}
+
+.weather__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.weather__block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+.weather__title {
+  font-weight: bold;
+}
+
+.weather__city-name {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .clock, .weather {
+    min-width: unset;
+    width: 90%;
+    margin: 0 auto;
   }
 }

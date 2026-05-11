@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": 37.6677,
+        "lat": 55.8634
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 285.99,
+        "feels_like": 284.58,
+        "temp_min": 285.38,
+        "temp_max": 286.12,
+        "pressure": 1019,
+        "humidity": 48,
+        "sea_level": 1019,
+        "grnd_level": 999
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 6,
+        "deg": 120
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1778431258,
+    "sys": {
+        "type": 2,
+        "id": 2109950,
+        "country": "RU",
+        "sunrise": 1778376437,
+        "sunset": 1778433855
+    },
+    "timezone": 10800,
+    "id": 579870,
+    "name": "Babushkin",
+    "cod": 200
+}
