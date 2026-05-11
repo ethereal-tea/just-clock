@@ -1,4 +1,4 @@
-import './weather'
+import './weather.js'
 
 const hourArrow = document.querySelector('#hours')
 const minuteArrow = document.querySelector('#minutes')
