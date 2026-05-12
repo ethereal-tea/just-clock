@@ -7,7 +7,9 @@ class Weather {
         this.weatherDesc = document.querySelector('.weather__city-desc')
         this.weaherTempFeelsLike = document.querySelector('.weather__fells-like-value')
         this.wheatherWindSpeed = document.querySelector('.weather__wind-value')
+        this.updateWeatherBtn = document.querySelector('.update-weather-btn')
         this.getLocation()
+        this.listenBtn()
         console.log(this.weatherDesc)
     }
 
@@ -16,6 +18,14 @@ class Weather {
             this.addListeners(position.coords.latitude, position.coords.longitude)
         }, (err) => {
             console.log('Не удалось получить геолокацию, ошибка: ' + err.message)
+        })
+    }
+
+    listenBtn () {
+        this.updateWeatherBtn.addEventListener('click', (e)=>{
+            console.log('Update Weather')
+            e.preventDefault()
+            this.getLocation()
         })
     }
 
