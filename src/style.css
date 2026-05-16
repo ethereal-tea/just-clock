@@ -9,12 +9,18 @@
   transition: transform 1s ease-in;
 }
 
+img {
+  display: block;
+  max-width: 100%;  
+  object-fit: cover;
+}
+
 body {
-  height: 100vh;
+  /* height: 100vh; */
   background: #e9c46a;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   gap: 1rem;
   font-family: "Schoolbell", cursive;
@@ -23,7 +29,7 @@ body {
 .app {
   width: 80%;
   /* height: 100%; */
-  margin: 0 auto;
+  margin: 1rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -71,10 +77,19 @@ body {
   gap: 1rem;
 }
 
+.weather__city {
+  margin: 0;
+  padding: 0;
+}
+
 .weather__block {
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
+}
+
+.weather__title {
+  color: #bda15c;
 }
 
 @media (max-width: 500px) {
@@ -122,6 +137,29 @@ body {
   color: #e9c46a;
   color: #f4a261;
   color: #e76f51 
+}
+
+.rickroll {
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rickroll video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 2rem;
+  left: 0;
 }
 
 @keyframes jump {
