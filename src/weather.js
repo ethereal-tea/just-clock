@@ -15,7 +15,7 @@ class Weather {
 
     getLocation() {
         navigator.geolocation.getCurrentPosition((position) => {
-            // this.addListeners(position.coords.latitude, position.coords.longitude)
+            this.addListeners(position.coords.latitude, position.coords.longitude)
         }, (err) => {
             console.log('Не удалось получить геолокацию, ошибка: ' + err.message)
         })
